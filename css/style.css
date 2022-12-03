@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Slab', Geneva, Verdana, sans-serif;
+}
+
+.header{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255, 242, 252)), url("../img/macarons.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/* nav{
+    box-shadow: 1px 1px 10px gray;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+} */
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.activo{
+    border-bottom: 1px solid black;
+}
+
+.info{
+    margin-top: 5rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info h1{
+    font-family: 'Satisfy';
+    margin: 0 1rem;
+    font-size: 3rem;
+}
+
+.info img{
+    width: 50%;
+}
+
+.info p{
+    margin: 0 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.flavors{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255, 242, 252));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.flavors h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.flavors .separador{
+    width: 30%;
+}
+
+.cardsFlavors{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+.macaronBox{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
+
+.fondo{
+    background-color: rgb(192, 238, 255);
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.fondo p{
+    font-family: 'Satisfy';
+}
+
+.macaronBox img{
+    height: 100%;
+}
+
+.footer{
+    background-color: rgb(255, 240, 243);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logoFooter{
+    font-family: 'Satisfy', sans-serif;
+    font-size: 2rem;
+}
+
+.follow{
+    font-family: 'Satisfy', sans-serif;
+    font-size: 1.2rem;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 576px) {
+    .cardsFlavors{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .macaronBox{
+        height: 30vh;
+    }
+
+    .fondo{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cardsFlavors{
+        display: flex;
+    }
+
+    .macaronBox{
+        height: 40vh;
+    }
+
+    .fondo{
+        font-size: 2rem;
+    }
+}
