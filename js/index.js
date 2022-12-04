@@ -26,7 +26,7 @@ const getFlavors = array => {
         <img src="${img}"/>
         <h3>${titulo}</h3>
         `;
-        card.className = "card";
+        card.className = "card1";
         contenedor.append(card);
     });
 }

@@ -6,7 +6,7 @@
 }
 
 .header{
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255, 242, 252)), url("../img/macarons.png");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255, 255, 255)), url("../img/macarons.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -63,11 +63,37 @@ nav ul li{
 .info p{
     margin: 0 3rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.carrusel{
+    margin-top: 2rem;
+}
+
+.carrusel h2{
+    text-shadow: 4px 4px 10px rgb(82, 82, 82);
+    position: absolute;
+    font-family: 'Satisfy';
+    color: white;
+    font-size: 4rem;
+}
+
+.carousel2, .carousel3{
+    position: relative;
+}
+
+.carousel2 h2{
+    right: 15%;
+    top: 35%;
+}
+
+.carousel3 h2, .carousel1 h2{
+    left: 15%;
+    top: 35%;
 }
 
 .flavors{
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255, 242, 252));
+    /* background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255, 242, 252)); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,17 +116,37 @@ nav ul li{
     grid-template-rows: repeat(2, 1fr);
 }
 
-.card{
+.card1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
     border-radius: 10px;
     text-align: center;
+    transition: 0.5s;
 }
 
-.card img{
+.card1 img{
     width: 100%;
+    transition: 0.5s;
+}
+
+.card1 h3{
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.card1:hover{
+    background-color: rgb(237, 237, 237);
+}
+
+.card1:hover img{
+    width: 120%;
+}
+
+.card1:hover h3{
+    font-size: 1.5rem;
 }
 
 .macaronBox{
@@ -135,10 +181,11 @@ nav ul li{
     background-color: rgb(255, 240, 243);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 2rem;
 }
 
-.footer div{
+.footer1, .footer2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,10 +204,14 @@ nav ul li{
 
 .social{
     display: flex;
-    flex-direction: row;
+    gap: 1rem;
 }
 
 @media screen and (min-width: 576px) {
+    .info p{
+        font-size: 1.2rem;
+    }
+
     .cardsFlavors{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -177,6 +228,10 @@ nav ul li{
 }
 
 @media screen and (min-width: 992px) {
+    .carrusel h2{
+        font-size: 6rem;
+    }
+
     .cardsFlavors{
         display: flex;
     }
