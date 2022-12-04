@@ -8,12 +8,12 @@ class Producto{
 }
 
 const productos = [];
-productos.push(new Producto(1, "../img/macaron1.png", "Matcha Green", "Lorem"));
-productos.push(new Producto(2, "../img/macaron2.png", "Gloriuous Pink", "Lorem"));
-productos.push(new Producto(3, "../img/macaron3.png", "Banana Yellow", "Lorem"));
-productos.push(new Producto(4, "../img/macaron4.png", "Tangerine", "Lorem"));
-productos.push(new Producto(5, "../img/macaron5.png", "Fudgy Choco", "Lorem"));
-productos.push(new Producto(6, "../img/macaron6.png", "Almond Paradise", "Lorem"));
+productos.push(new Producto(1, "img/macaron1.png", "Matcha Green", "Lorem"));
+productos.push(new Producto(2, "img/macaron2.png", "Gloriuous Pink", "Lorem"));
+productos.push(new Producto(3, "img/macaron3.png", "Banana Yellow", "Lorem"));
+productos.push(new Producto(4, "img/macaron4.png", "Tangerine", "Lorem"));
+productos.push(new Producto(5, "img/macaron5.png", "Fudgy Choco", "Lorem"));
+productos.push(new Producto(6, "img/macaron6.png", "Almond Paradise", "Lorem"));
 
 console.log(productos);
 
